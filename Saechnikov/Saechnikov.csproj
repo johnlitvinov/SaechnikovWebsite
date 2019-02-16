@@ -180,6 +180,10 @@
     <Content Include="Views\Home\_WeWork.cshtml" />
     <Content Include="Views\Home\_WantToWorkWithUS.cshtml" />
     <Content Include="Views\Home\_Head.cshtml" />
+    <Content Include="Views\Home\Process.cshtml" />
+    <Content Include="Views\Home\Partners.cshtml" />
+    <Content Include="Views\Home\Thoughts.cshtml" />
+    <Content Include="Views\Home\Jobs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

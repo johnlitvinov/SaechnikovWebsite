@@ -1,0 +1,627 @@
+﻿
+@{
+    ViewBag.Title = "Jobs";
+    Layout = null;
+}
+}
+
+<h2>Jobs</h2>
+
+<!DOCTYPE html>
+<html class='notranslate no-js scheme- ml no-ms no-mm size-standard responsive' xmlns:fb='http://ogp.me/ns/fb#'>
+<head>
+    <title>Jakt Jobs - AngelList</title>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="3yJd+I7TK/xz1/M1VKs0Nj/S59xaajqKty/82IAgOicWLUb9HfpzooADD+OM4QuAIep69enk788AJmvLRWXF+g==" />
+    <!--
+    fYZ8zeee5GL20F+7clhXGrJdNN87aOf3Vb+GBdsS4q4ryulcyMPDXYdbWzFKM4RJHNtmr2OTKhI7gRK/CbrUGU43q2MRN+7oxE76U2+Wzn2HpMoJ3/45wItkCb9QQv1MPa68JeoMxz+ZRMzr806EIFz18f57naKSALdW1Q/lwZ92B5koEgJPjQ2U6qYkckWMtUQw1WLmjAvNsq08psI2EV2rqsHyT80aldSEfNovuykNWzOibEheo+iADFxrSDNe6Z7tq7whKqHuVoetyO413zPc3kPqXg2cX7SeCkawUMrFvtjPwUTBorkWgXVneNQ7mgBl6vWKWCJfT1owgsjYq6rImrHaO2AV/LHsh2IfFxw+wDd1IY24CIS3oHpSYRdxUJovN6INtIhbFICeSjV3vWrTceUTxVUXc15CLmMcZ/mIbnP97Ug057CVjq4PZOjW50ZfIAIqVql2fNM0b46JkMFJOgjsd8nFb9OQ3I5wpDt1lWHtRZ2le6JwNo2Q1qMKt1tLB7WMLl/xkNO4CFCtPb/Up1NvRgjPce+V+eJ2snwHylASoRmR8k90mcFV0+MgxsTMTX6uCq4hIj8TDkK/IO+sg8s59ZGPKzm0njSLQlZgozPLjOPYUDPX62n8oBW0c1icmspfvRWsZj5B4MXiGpZZ2mLx9zw/bXx0XwmQZNS+D4JXn/JPKPO8j5TUK0lLYOzPQXcmqpEqXPp0kdMkJ0/9V0Hk4F/exKhCVFZTFxlgQ+2uiZDYUVpnHYtfw4TxE7qz7zI33mR1nU3ZwJ5AL0qdvxp6cx4JamQ5DbxfLN/IltQ3+8zP/qVshSQ6kV5sNW2eEYLWAvTwBY3ivos+8xVjrxrSK7V0zZD7ZEbyHXbrRPgLD6gApzeWmv8bGr9D1z9pQ1DIQKxYD5sW8vNWgJvcMSSqM0CX7mpNq2a9P2+gqRM5N8oxJsiB2Tb9ztfYuelLLB9ohe5DXSggUW1u1B27Q3z50CJIf94fZV/9QiMx22cAV83d5INrCVuEg8fG3BeuqNpogycj0FGe3z9XJ+2WFRCTfaPwESI3WeixRW8WDnnzC9w/M6YPP5vmESEgcercndzHxT7Z1jrlX4R5QXcIDxL4x1L5Se2dw+pPDwQ2Ypw7Q2EPy3uzkTkSSobJajZF8QE6tVVTMeAy7sQauw+kVOhnMtvMzn2XM4mmPILIVxdFevAwm2/sDOFYILkIARvkAfa9FtlIh3a7dTjMnOpRO9sHunfWN2uSrhmXdmPUXFkMbR45hyad+npdjuc67IY3bILDJjr1MfGfRntht6imoCkpBHOOzAfPsmsDoQWinxjh3fzrMyOXFyGHBWqVEe2JXuB94IGAO3qBWEKTipy1EjlUKtgwxAE9bWwkHvhB22+ZfRjblkH8VRD5xwdy9m+bPN5RZ8iT1FTkvNAjQLGAf3smUkSSCW0G6sUqZaRbQaQPHNoww6Jla5C8FQj/EbRsh0hIbfUOP1U+9+0IAOA6SwllHXCfEA302scc1BpRH4wl1dBkZ1VqaB2Z4W406hud4uax8C51eX5WyvH52EYwrWif3lKKKkfn4fbP9fgpODkplaCJyrrGDqpWWcjqop1w6OxgshK54/gTFyCmsBbt56v5sPOQc6b3at84Yz1OXN12kq2RRntp38juhi4Jv1jDAbOlIqgDbLGe4YErLMMsrlrxB+OCa2Wyg8BtgMTsu3L+N/aQyptUcxVUum7E4kySDANC+d6/K8ANx37fLnOArL5hptQwqlIy/8xdMZdv8UTamHnasbVNO4uasX21NkXV/4bYyZu7MW5b/M91mbY39Fqfs+GjWvF970fu/VXMk1VakkY01BowkP+lj0VXepNu6BiKTKPcXsBFu/iG/8bYv964SOCeClM61CJfeEGMPBvBxAhx91Da7W3OmRnkabFp+d5a09BjQjDwOi58brNZFVANpB41ZH26pesPDuv0YCwZuJuEJE7N35SW8t53d0SGbkM4oqLOHjN1BHoNYIJK0+xsPKLtaOOx1JDazDlFlK1cy+hCDoTGsaF+a4fp//OGd+WWN/1R+M6O8YarmL7jtqDEhgAUXVwNc1dYsBg7Hk+8SY87Atnj8boPHiHZKXXrUfEZhmqnSBID2aFMRx9iDUqK/YwrKsvsmA+EDblwmxf+1h13D+xYbP0GIZBKIaTLlgwe9V1QA/DRTrXQnzEdB2mYrebwUaGnzvakbHGs6ncYpbThqkRrPpU4XOWdrH2zwHWG6VxQ6wnQZOurVroUBe/ygX1YEh1c2HkgMYNUqNOz8byXPg/sATp0117RooAn2hGpWJxtVQ==
+    -->
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta content='en_US' http-equiv='Content-Language'>
+    <meta content='c2y_K2CiLmGeet7GUQc9e3RVGp_gCOxUC4IdJg_RBVo' name='google-site-verification'>
+    <meta content='00bd751d25bdb494779b40bedece7089' name='detectify-verification'>
+    <meta content='initial-scale=1.0,maximum-scale=2.0,width=device-width' name='viewport'>
+    <meta content='notranslate' name='google'>
+    <meta content='Jakt is hiring - See 1 Jakt job. Jakt is a growing digital innovation studio in NYC. We partner with companies of all sizes, from startups to enterprises, to create bespoke digital products that so...' name='description'>
+    <link href='https://angel.co/jakt/jobs' rel='canonical'>
+    <meta content='noarchive' name='robots'>
+    <meta content='https://d1qb2nb5cznatu.cloudfront.net/startups/i/377860-e01e465d6a32095451c004e42d5f8d90-medium_jpg.jpg?buster=1480711854' property='og:image'>
+    <meta content='Jobs at Jakt' property='og:title'>
+    <meta content='https://angel.co/jakt/jobs' property='og:url'>
+    <meta content="Jakt is hiring - See 1 Jakt job. Jakt is a growing digital innovation studio in NYC. We partner with companies of all sizes, from startups to enterprises, to create bespoke digital products that solve problems. We're on a mission to positively impact the lives of 100 million people by 2027 with solutions we've created." property='og:description'>
+    <!-- / Twitter card metadata -->
+    <meta content='product' name='twitter:card'>
+    <meta content='angellisttalent' name='twitter:site'>
+    <meta content='Jobs at Jakt' name='twitter:title'>
+    <meta content="Jakt is hiring - See 1 Jakt job. Jakt is a growing digital innovation studio in NYC. We partner with companies of all sizes, from startups to enterprises, to create bespoke digital products that solve problems. We're on a mission to positively impact the lives of 100 million people by 2027 with solutions we've created." name='twitter:description'>
+    <meta content='https://d1qb2nb5cznatu.cloudfront.net/startups/i/377860-e01e465d6a32095451c004e42d5f8d90-medium_jpg.jpg?buster=1480711854' name='twitter:image:src'>
+    <meta content='Front-End Engineer' name='twitter:data1'>
+    <meta content='Open Positions' name='twitter:label1'>
+    <meta content='$65k &ndash; $120k, No equity' name='twitter:data2'>
+    <meta content='Compensation' name='twitter:label2'>
+    <meta content='angel.co' name='twitter:domain'>
+
+    <link href='https://angel.co/assets/icons/angellist-e1decb2fb69dc221e2dd4ad5f749797e28b3e9e92957e0f161b8e64d5a8a74c8.ico' rel='shortcut icon'>
+    <link href='/images/icons/iOS/Icon.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='/images/icons/iOS/Icon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='/images/icons/iOS/Icon@2x.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='/images/icons/iOS/Icon-72@2x.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.g.application0-07b3592dec4344b5a730.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.g.application1-d243f41e11efeb2ea98d.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.admin-2375509de23e464187a6.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.angel_profiles-6d6f99e921734b90e078.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.applicant_tracker-43528c219500871e4d95.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.closings-452097121e393b4ee666.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.companies-95718017aca45eee8245.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.conversations-eadc56b02c5632017df2.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.follows-fc2173cba9f750b0360a.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.fund_campaigns-28694762f5d94e5a2b86.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.funding_rounds-47ab7a05ee2de7321fcf.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.fundraising-0dddebb26c5d71f46238.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.fundraising_campaigns-823e2c288e88c5877039.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.home-87d69f84e512927a72fc.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.inbound-cccb13e7d091da273e7e.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.incubator_administrators-7807902aa252a0ac42d8.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.job_listing_showcase-7d24a814e728f3840c16.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.job_listings-e044852f34457dec1db0.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.job_pairings-dfed9791e4577781fc4a.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.job_profile_signup-80133a4be7dd1f1730c8.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.job_profiles-e11238fe53c6accc1e94.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.layouts-7c0b235a3a71196be0a2.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.messages-f0c2ba5a766f4c1672d2.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.new_posts-584092171beba53b8b43.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.new_taggings-2ce6141704697396345c.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.new_tags-9087eaff4c6d5acb3b80.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.onboarding-580ba7b72ff06881c37f.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.paths-df9727b4549905accbbf.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.people-47d9233b4848a7e97972.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.profile_flaggings-94ad4f80d4ca1f5a133b.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.profiles-61fd5cfc04dbf1549ac0.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.program_applications-4f6d018533e5e617c3fc.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.programs-4086a402f272e8400dc0.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.projects-fa9f09b666d313546f7a.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.qa-6935613af44e7f1a9d1d.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.quizzes-7d897c4a6951e1dd3716.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.recruiting-671eddeb0efa15005c29.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.reviews-ca13ede071b0bc89c11d.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.screenshots-d40d990b5591a09ecbba.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.sessions-07670e9fd0ae94da4c17.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.settings-5161f1c2d0aec1ca3e49.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.shared-ed00fb420a0c0d280981.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.social-d0c6045a565cea9de681.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.startup_intros-fc0c416c72d98fc1b377.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.startup_roles-7bc152ecab6d7413384a.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.startup_rounds-ec58c12d76d213d33f47.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.startups-ee6bae5b1bff930a0753.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.syndicates-57d0a1d1212e5b4b1ab0.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.tags-e912776c2a35a33f4175.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.transaction_feed-4af0ab63e5c397cc3b13.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.user_graph_edges-dca402a4cc65b7c544ea.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.user_graph_requests-4d26ded8c35770038b2f.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.user_one_signal_preferences-a37b1edb42b420026e94.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.valuations-f0661f2a9ad1c1da5f66.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/wps.v.views-6dbde71a68a61f232dbf.css" />
+    <link rel="stylesheet" media="screen" href="https://angel.co/webpack/application-32a3def232b534b7bdb9.css" />
+
+    <script>
+//<![CDATA[
+window['fs_disable']=true;
+//]]>
+    </script>
+    <script>
+//<![CDATA[
+window._rollbarPerson={"id":null,"username":null};
+//]]>
+    </script>
+    <script>
+//<![CDATA[
+!function(e){var r={};function n(t){if(r[t])return r[t].exports;var o=r[t]={i:t,l:!1,exports:{}};return e[t].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=r,n.d=function(e,r,t){n.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,r){if(1&r&&(e=n(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(n.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var o in e)n.d(t,o,function(r){return e[r]}.bind(null,o));return t},n.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(r,"a",r),r},n.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},n.p="//angel.co/webpack/",n(n.s=743)}({743:function(e,r,n){n(744),n(747),n(748)},744:function(e,r,n){window._rollbarConfig={accessToken:"e36e9edcd88b416780f0ebe64497cb59",captureUncaught:!0,captureUnhandledRejections:!1,globalAlias:"_alRollbar",rollbarJsUrl:n(745),payload:{environment:"production_js",client:{javascript:{code_version:"d14b1704075711766d294260935ec725bf9bfeee",source_map_enabled:!0,guess_uncaught_frames:!0}},person:window._rollbarPerson},filterTelemetry:function(e){return"dom"===e.type&&"input"===e.body.subtype},checkIgnore:function(e,r,n){var t,o,a,l,i,s,c,u,d,f,p,b,h,_,g,w,m,v,y,E,j,S,x;try{if("development_js"===n.data.environment)return!0;if(x=null!=n&&null!=(d=n.data)&&null!=(f=d.client)&&null!=(_=f.javascript)?_.browser:void 0,a=null!=n&&null!=(g=n.data)&&null!=(w=g.body)&&null!=(m=w.trace)?m.exception:void 0,i=null!=n&&null!=(v=n.data)&&null!=(y=v.body)&&null!=(E=y.trace)&&null!=(j=E.frames)&&null!=(p=j[0])?p.filename:void 0,e&&a.rollbarIgnore)return!0;if(e&&null!=i&&null!=x&&/Firefox/.test(x)&&/^resource:\/\//.test(i))return!0;for(l=0,c=(t=[/Loading chunk [0-9]+ failed/,/atomicFindClose/,/Baiduspider/,/dataKeys/,/gcdemodata/,/bCapGloRef/,/sCapGloRef/]).length;l<c;l++)if(t[l].test(null!=a?a.message:void 0))return!0;for(s=0,u=(S=[/^http[s]?\:\/\/webcache\.googleusercontent\.com/,/^http[s]?\:\/\/web\.archive\.org/,/^http[s]?\:\/\/tunnelproxy\.nu/]).length;s<u;s++)if(S[s].test(null!=n&&null!=(b=n.data)&&null!=(h=b.request)?h.url:void 0))return!0;return!!/NPObject/.test(a.message)||n.data.client.runtime_ms>12e5}catch(o){return o,!1}}},n(746)},745:function(e,r,n){e.exports=n.p+"9bc9aa27c86d427d860875928f73492f.js"},746:function(e,r){!function(e){function r(t){if(n[t])return n[t].exports;var o=n[t]={exports:{},id:t,loaded:!1};return e[t].call(o.exports,o,o.exports,r),o.loaded=!0,o.exports}var n={};r.m=e,r.c=n,r.p="",r(0)}([function(e,r,n){"use strict";var t=n(1),o=n(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.3.9/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=t.setupShim(window,_rollbarConfig),l=o(_rollbarConfig);window.rollbar=t.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(e,r,n){"use strict";function t(e){return function(){try{return e.apply(this,arguments)}catch(e){try{console.error("[Rollbar]: Internal error",e)}catch(e){}}}}function o(e,r){this.options=e,this._rollbarOldOnError=null;var n=i++;this.shimId=function(){return n},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[n]={handler:r,messages:[]})}function a(e){return t(function(){var r=Array.prototype.slice.call(arguments,0),n={shim:this,method:e,args:r,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)})}var l=n(2),i=0,s=n(3).bind(null,function(e,r){return new o(e,r)});o.prototype.loadFull=function(e,r,n,o,a){var l=!1,i=r.createElement("script"),s=r.getElementsByTagName("script")[0],c=s.parentNode;i.crossOrigin="",i.src=o.rollbarJsUrl,n||(i.async=!0),i.onload=i.onreadystatechange=t(function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{c.removeChild(i)}catch(e){}l=!0,function(){var r;if(void 0===e._rollbarDidLoad){r=new Error("rollbar.js did not load");for(var n,t,o,l,i=0;n=e._rollbarShims[i++];)for(n=n.messages||[];t=n.shift();)for(o=t.args||[],i=0;i<o.length;++i)if("function"==typeof(l=o[i])){l(r);break}}"function"==typeof a&&a(r)}()}}),c.insertBefore(i,s)},o.prototype.wrap=function(e,r,n){try{var t;if(t="function"==typeof r?r:function(){return r||{}},"function"!=typeof e)return e;if(e._isWrap)return e;if(!e._rollbar_wrapped&&(e._rollbar_wrapped=function(){n&&"function"==typeof n&&n.apply(this,arguments);try{return e.apply(this,arguments)}catch(n){var r=n;throw"string"==typeof r&&(r=new String(r)),r._rollbarContext=t()||{},r._rollbarContext._wrappedSource=e.toString(),window._rollbarWrappedError=r,r}},e._rollbar_wrapped._isWrap=!0,e.hasOwnProperty))for(var o in e)e.hasOwnProperty(o)&&(e._rollbar_wrapped[o]=e[o]);return e._rollbar_wrapped}catch(r){return e}};for(var c="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),u=0;u<c.length;++u)o.prototype[c[u]]=a(c[u]);e.exports={setupShim:function(e,r){if(e){var n=r.globalAlias||"Rollbar";if("object"==typeof e[n])return e[n];e._rollbarShims={},e._rollbarWrappedError=null;var o=new s(r);return t(function(){r.captureUncaught&&(o._rollbarOldOnError=e.onerror,l.captureUncaughtExceptions(e,o,!0),l.wrapGlobals(e,o,!0)),r.captureUnhandledRejections&&l.captureUnhandledRejections(e,o,!0);var t=r.autoInstrument;return!1!==r.enabled&&(void 0===t||!0===t||"object"==typeof t&&t.network)&&e.addEventListener&&(e.addEventListener("load",o.captureLoad.bind(o)),e.addEventListener("DOMContentLoaded",o.captureDomContentLoaded.bind(o))),e[n]=o,o})()}},Rollbar:s}},function(e,r){"use strict";function n(e,r,n){if(r.hasOwnProperty&&r.hasOwnProperty("addEventListener")){for(var t=r.addEventListener;t._rollbarOldAdd&&t.belongsToShim;)t=t._rollbarOldAdd;var o=function(r,n,o){t.call(this,r,e.wrap(n),o)};o._rollbarOldAdd=t,o.belongsToShim=n,r.addEventListener=o;for(var a=r.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(e,r,n){a.call(this,e,r&&r._rollbar_wrapped||r,n)};l._rollbarOldRemove=a,l.belongsToShim=n,r.removeEventListener=l}}e.exports={captureUncaughtExceptions:function(e,r,n){if(e){var t;"function"==typeof r._rollbarOldOnError?t=r._rollbarOldOnError:e.onerror&&!e.onerror.belongsToShim&&(t=e.onerror,r._rollbarOldOnError=t);var o=function(){var n=Array.prototype.slice.call(arguments,0);!function(e,r,n,t){e._rollbarWrappedError&&(t[4]||(t[4]=e._rollbarWrappedError),t[5]||(t[5]=e._rollbarWrappedError._rollbarContext),e._rollbarWrappedError=null),r.handleUncaughtException.apply(r,t),n&&n.apply(e,t)}(e,r,t,n)};o.belongsToShim=n,e.onerror=o}},captureUnhandledRejections:function(e,r,n){if(e){"function"==typeof e._rollbarURH&&e._rollbarURH.belongsToShim&&e.removeEventListener("unhandledrejection",e._rollbarURH);var t=function(e){var n,t,o;try{n=e.reason}catch(e){n=void 0}try{t=e.promise}catch(e){t="[unhandledrejection] error getting `promise` from event"}try{o=e.detail,!n&&o&&(n=o.reason,t=o.promise)}catch(e){o="[unhandledrejection] error getting `detail` from event"}n||(n="[unhandledrejection] error getting `reason` from event"),r&&r.handleUnhandledRejection&&r.handleUnhandledRejection(n,t)};t.belongsToShim=n,e._rollbarURH=t,e.addEventListener("unhandledrejection",t)}},wrapGlobals:function(e,r,t){if(e){var o,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(o=0;o<l.length;++o)e[a=l[o]]&&e[a].prototype&&n(r,e[a].prototype,t)}}}},function(e,r){"use strict";function n(e,r){this.impl=e(r,this),this.options=r,function(e){for(var r=function(e){return function(){var r=Array.prototype.slice.call(arguments,0);if(this.impl[e])return this.impl[e].apply(this.impl,r)}},n="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),t=0;t<n.length;t++)e[n[t]]=r(n[t])}(n.prototype)}n.prototype._swapAndProcessMessages=function(e,r){this.impl=e(this.options);for(var n,t,o;n=r.shift();)t=n.method,o=n.args,this[t]&&"function"==typeof this[t]&&("captureDomContentLoaded"===t||"captureLoad"===t?this[t].apply(this,[o[0],n.ts]):this[t].apply(this,o));return this},e.exports=n},function(e,r){"use strict";e.exports=function(e){return function(r){if(!r&&!window._rollbarInitialized){for(var n,t,o=(e=e||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(e){return new a(e)},i=0;n=window._rollbarShims[i++];)t||(t=n.handler),n.handler._swapAndProcessMessages(l,n.messages);window[o]=t,window._rollbarInitialized=!0}}}}])},747:function(e,r){window.fs_disable||(window._fs_debug=!1,window._fs_host="www.fullstory.com",window._fs_org="1JRNY",window._fs_namespace="FS_al_noconflict",function(e,r,n,t,o,a,l,i){n in e&&e.console&&e.console.log||((l=e[n]=function(e,r){l.q?l.q.push([e,r]):l._api(e,r)}).q=[],(a=r.createElement(t)).async=1,a.src="https://"+_fs_host+"/s/fs.js",(i=r.getElementsByTagName(t)[0]).parentNode.insertBefore(a,i),l.identify=function(e,r){l(o,{uid:e}),r&&l(o,r)},l.setUserVars=function(e){l(o,e)},l.identifyAccount=function(e,r){a="account",(r=r||{}).acctId=e,l(a,r)},l.clearUserCookie=function(e,n){for(e=r.domain;r.cookie="fs_uid=;domain="+e+";path=/;expires="+new Date(0),!((n=e.indexOf("."))<0);)e=e.slice(n+1)})}(window,document,window._fs_namespace,"script","user"),window._fs_callbacks=[],window._fs_ready=function(){setTimeout(function(){for(var e in window._fs_callbacks)window._fs_callbacks[e]();window._fs_callbacks=!1},100)})},748:function(e,r){var n,t;t=[],n=!1,window._eventQueueClear=function(e,r){var o,a,l,i;if(n)throw new Error("_eventQueueClear only be invoked once");for(n=!0,i=[],a=0,l=t.length;a<l;a++)o=t[a],i.push(o(e,r));return i},window._q=function(e){return!!n||(!!this._eventQueueTriggered||(this._eventQueueTriggered=!0,e.preventDefault(),this.className+=" loading",t.push(function(r){return function(n,t){return t.with(n(r).closest(t.rootSelector()),function(){return n(r).removeClass("loading"),n(r).trigger(n.event.fix(e))})}}(this)),!0))}}});
+//]]>
+    </script>
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'jdy1kdx',
+      scriptTimeout: 3000
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+    </script>
+    <script>
+//<![CDATA[
+window._mediaBreakpoints = [767,959];
+//]]>
+    </script>
+    <script src="https://angel.co/assets/bundles/head-69b7354f7265b5a039957f86c74677439c377972146d205dca074c2aaa7f0f7c.js"></script>
+    <script>
+  window._alConfig = {"lib/environment":{"controller":"job_listing_showcase","action":"index","environment":"production","current_user":null},"initializer":{"root_class":"_a","template_name_data_key":"_tn","javascript_module_exists_class":"_jm"},"lib/partials":{"root_class":"_a"},"segment/analytics":{"logging_enabled":false,"send_to_intercom":false},"application":{"js_templates":["shared/react/react_view","job_listings/apply_button","shared/job_showcase_share","job_listing_showcase/nav","job_listing_showcase/preamble","job_listing_showcase/hero","job_listing_showcase/jobs","job_listing_showcase/team","job_listing_showcase/showcase_recommendations","job_listing_showcase/footer","job_listing_showcase/index"],"image_host":"https://angel.co/images"}};
+    </script>
+    <script src="https://angel.co/webpack/application-e65c3c2ab11e3e685055.js" async="async"></script>
+
+
+    <script>
+//<![CDATA[
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga("create","UA-17693728-1","auto");
+ga("set","dimension12","company_jobs");
+ga("set","contentGroup1","Job showcase");
+ga("send","pageview");
+
+//]]>
+    </script>
+    <script async='async' src='https://www.google-analytics.com/analytics.js'></script>
+
+    <script>
+//<![CDATA[
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+analytics.load("poTMRBHig2tYBNBP5P6kGfkGBFq19jmB");
+analytics.page(null,null, {"anonymousId":"b9887c6c15883b503eb2017e9d9aa988","controller":"job_listing_showcase","action":"index","pageviewId":"b9887c6c15883b503eb2017e9d9aa988c66555459d9694cc595bf6f896157eac"}, {"anonymousId":"b9887c6c15883b503eb2017e9d9aa988"})
+analytics.track('Viewed job showcase', {"startup_id":377860}, {"anonymousId":"b9887c6c15883b503eb2017e9d9aa988"})
+window._pageviewId = "b9887c6c15883b503eb2017e9d9aa988c66555459d9694cc595bf6f896157eac"
+}}();
+
+//]]>
+    </script>
+    <!-- Global site tag (gtag.js) - Google AdWords: 828140943 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-828140943"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-828140943');
+    </script>
+
+
+    <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '2212641018949602');
+  fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height='1' src='https://www.facebook.com/tr?id=2212641018949602&amp;ev=PageView&#x000A;&amp;noscript=1' width='1'>
+    </noscript>
+
+    <script>
+//<![CDATA[
+window._stripeKey = "pk_live_Sgsc9Y8xSonesJppEw1ee0dY"
+
+//]]>
+    </script>
+</head>
+<body class='' id='layouts-base-body'>
+
+    <div data-show-wvyp-modal="null" class="job-showcase-wrapper djls28 fix36 _a _jm" data-_tn="job_listing_showcase/index">
+        <div data-scroll-to-section="null" class=" djls28 fnv25 _a _jm" data-_tn="job_listing_showcase/nav">
+            <div class='fixed-nav header-nav'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                    <div class='s-grid-colSm24'>
+                        <div class='logo u-inlineBlock g-photo_container'>
+                            <a class="startup-link" title="Jakt" data-type="Startup" data-id="377860" href="https://angel.co/jakt"><img class="angel_image" alt="Jobs at Jakt" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/377860-e01e465d6a32095451c004e42d5f8d90-medium_jpg.jpg?buster=1480711854" /></a>
+                        </div>
+                        <div class='u-inlineBlock s-vgPadLeft0_5'></div>
+                        <ul class='job-showcase c-navbar u-inline u-uppercase'>
+                            <li class='u-inlineBlock'>
+                                <a class='c-navbar-item' data-bounds_target='.hero' data-scroll_target='.hero'>
+                                    Jakt
+                                </a>
+                            </li>
+                            <li class='u-inlineBlock'><a class='c-navbar-item' data-bounds_target='.jobs' data-scroll_target='.jobs'>Jobs</a></li>
+                            <li class='u-inlineBlock'><a class='c-navbar-item nav-team' data-bounds_target='.team' data-scroll_target='.team'>Team</a></li>
+                        </ul>
+                        <div class='cta-container u-floatRight'>
+                            <div class='top-apply-button u-inlineBlock'>
+                                <div class=" djl87 job_listings fan13 apply_button _a _jm" data-startup_id="377860" data-startup_name="Jakt" data-startup-hiring="true" data-logged-in="false" data-startup="jakt" data-source="showcase_nav" data-_tn="job_listings/apply_button">
+                                    <div class='js-success u-hidden'>
+                                        <div class='buttons'>
+                                            <a class='alternate c-button c-button--gray u-fontWeight600' href='javascript:void(0);'>
+                                                <span class='fontello-ok' style='font-size: 0.9em'></span>
+                                                Applied
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='js-qualifications-dropdown u-hidden qualifications-dropdown'></div>
+                                    <div class='buttons js-apply applicant-flow-dropdown'>
+                                        <a class="c-button c-button--blue  js-interested-button" rel="nofollow" href="javascript:void(0);">Apply Now</a>
+                                        <div class='dropdown-align--right dropdown-menu job-dropdown-menu js-dropdown u-hidden' data-force-note='' data-selected-listing-id='307930' data-source='showcase_nav' data-startup-id='377860'>
+                                            <div class='dropdown-nub-wrapper'></div>
+                                            <div class='dropdown-nub'></div>
+                                            <div class='dropdown-inner-menu dropdown-width--lg'>
+                                                <div class='u-textAlignLeft'>
+                                                    <div class='js-step js-user-note s-form'>
+                                                        <div class='dropdown-item dropdown-title u-fontSize14 u-fontWeight500'>
+                                                            Add a message to Jakt
+                                                        </div>
+<textarea class='autogrow user-note-textarea u-fontSize14 u-colorGray6 u-block' max_length='1000' placeholder='(optional) Write a note to Lauren Griffin  at Jakt. What excites you about Jakt? Why would you be a good fit?'></textarea>
+                                                        <button class='apply-button c-button c-button--blue s-vgTop0_5 s-vgRight1 u-floatRight js-apply-button'>
+                                                            Apply
+                                                        </button>
+                                                        <div class='cb'></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ApplicationModalContainer dsr5 shared-react frw65 react_view _a _jm" data-render="false" data-apollo="true" data-component-path="talent/components/ApplicationModalContainer" data-props="{&quot;startupId&quot;:377860}" data-_tn="shared/react/react_view"></div>
+                                </div>
+                            </div>
+                            <div class='share-button-container u-inlineBlock'>
+                                <div class=" ds31 shared fje97 job_showcase_share _a _jm" data-_tn="shared/job_showcase_share">
+                                    <a class="c-button c-button--gray js-share-button" rel="nofollow" href="/job_pairings/promote/377860">Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-hero_cover_photo_url="linear-gradient(45deg, #556886 0%, #c1c3d0 100%)" class=" djls28 fho30 _a _jm" data-_tn="job_listing_showcase/hero">
+            <div class='hero' style='background-image: linear-gradient(45deg, #556886 0%, #c1c3d0 100%)'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                </div>
+            </div>
+            <div class='hero-content s-vgBorderBottom1 u-bgWhite'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                    <div class='hero-logo-wrapper s-vgPad0_5 s-vgPullTop3_5 u-bgWhite u-inlineBlock'>
+                        <a class="startup-link" title="Jakt" data-type="Startup" data-id="377860" href="https://angel.co/jakt"><img class="angel_image" alt="Jakt" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/377860-e01e465d6a32095451c004e42d5f8d90-medium_jpg.jpg?buster=1480711854" /></a>
+                    </div>
+                    <div class='company-summary s-grid-colSm24'>
+                        <h1 class='u-colorGray3'>Jobs at Jakt</h1>
+                        <div class='high-concept s-vgBottom2 u-colorGray6 u-fontSize16'><p>Digital product studio. Our mission: to positively impact the lives of 100M people by 2027</p></div>
+                        <div class=" djls28 fpe40 _a _jm" data-_tn="job_listing_showcase/preamble">
+                            <div class='preamble-section'>
+                                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                                    <div class='js-preamble-container preamble-container s-grid--preMd4 s-grid-colMd16'>
+                                        <div class='js-preamble preamble u-fontSize16 u-colorGray6'>
+                                            <p>Jakt is a growing digital innovation studio in NYC. We partner with companies of all sizes, from startups to enterprises, to create bespoke digital products that solve problems. We're on a mission to positively impact the lives of 100 million people by 2027 with solutions we've created.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / Text box to add or edit preamble -->
+                            </div>
+                        </div>
+                        <div class='action-buttons s-vgTop2_5 s-vgPullBottom0_5'>
+                            <div class='button-container left-button-container'>
+                                <div class=" djl87 job_listings fan13 apply_button _a _jm" data-startup_id="377860" data-startup_name="Jakt" data-startup-hiring="true" data-logged-in="false" data-startup="jakt" data-source="showcase_hero" data-_tn="job_listings/apply_button">
+                                    <div class='js-success u-hidden'>
+                                        <div class='buttons'>
+                                            <a class='alternate c-button c-button--gray c-button--lg u-fontWeight600' href='javascript:void(0);'>
+                                                <span class='fontello-ok' style='font-size: 0.9em'></span>
+                                                Applied
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='js-qualifications-dropdown u-hidden qualifications-dropdown'></div>
+                                    <div class='buttons js-apply applicant-flow-dropdown'>
+                                        <a class="c-button c-button--blue  c-button--lg c-button--lg js-interested-button" rel="nofollow" href="javascript:void(0);">Apply Now</a>
+                                        <div class='dropdown-align--left dropdown-menu job-dropdown-menu js-dropdown u-hidden' data-force-note='' data-selected-listing-id='307930' data-source='showcase_hero' data-startup-id='377860'>
+                                            <div class='dropdown-nub-wrapper'></div>
+                                            <div class='dropdown-nub'></div>
+                                            <div class='dropdown-inner-menu dropdown-width--lg'>
+                                                <div class='u-textAlignLeft'>
+                                                    <div class='js-step js-user-note s-form'>
+                                                        <div class='dropdown-item dropdown-title u-fontSize14 u-fontWeight500'>
+                                                            Add a message to Jakt
+                                                        </div>
+<textarea class='autogrow user-note-textarea u-fontSize14 u-colorGray6 u-block' max_length='1000' placeholder='(optional) Write a note to Lauren Griffin  at Jakt. What excites you about Jakt? Why would you be a good fit?'></textarea>
+                                                        <button class='apply-button c-button c-button--blue s-vgTop0_5 s-vgRight1 u-floatRight js-apply-button'>
+                                                            Apply
+                                                        </button>
+                                                        <div class='cb'></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ApplicationModalContainer dsr5 shared-react frw65 react_view _a _jm" data-render="false" data-apollo="true" data-component-path="talent/components/ApplicationModalContainer" data-props="{&quot;startupId&quot;:377860}" data-_tn="shared/react/react_view"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class='cb'></div>
+            </div>
+        </div>
+        <div class='cb'></div>
+        <div class=" djls28 fjs30 _a _jm" data-_tn="job_listing_showcase/jobs">
+            <div class='jobs s-vgBorderTop1 showcase-section u-bgWhite'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                    <h2>
+                        Jobs at Jakt
+                    </h2>
+                    <ul class='job-listings'>
+                        <li class='job-listing-role s-vgPadBottom1_5 s-vgBottom2'>
+                            <div class='group s-grid-colMd6 u-fontSize18 s-vgPadTop0_5'>
+                                Software Engineering Jobs
+                            </div>
+                            <div class='group-listings s-grid-colMd18'>
+                                <div class='s-grid s-grid--outer'>
+                                    <div class='listing s-grid-colSm24 s-vgPadTop0_5 s-vgPadBottom0_5 u-fontSize14'>
+                                        <div class='listing-title s-grid-colSm18'>
+                                            <a class="u-fontSize18" href="https://angel.co/jakt/jobs/307930-front-end-engineer">Front-End Engineer</a>
+                                            <div class='listing-data u-colorGray9'>
+                                                New York City
+                                                &middot;
+                                                Full Time
+                                                <span class='listing-break'></span>
+                                                <span class='listing-break-middot'>
+                                                    &middot;
+                                                    $65k &ndash; $120k · No equity
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class='listing-actions s-grid-colSm6'>
+                                            <div class='listing-button s-vgTop0_5 u-floatRight'>
+                                                <div class=" djl87 job_listings fan13 apply_button _a _jm" data-startup_id="377860" data-startup_name="Jakt" data-startup-hiring="true" data-logged-in="false" data-startup="jakt" data-source="showcase_all_jobs" data-job-listing="307930" data-_tn="job_listings/apply_button">
+                                                    <div class='js-success u-hidden'>
+                                                        <div class='buttons'>
+                                                            <a class='alternate c-button c-button--gray u-fontWeight600' href='javascript:void(0);'>
+                                                                <span class='fontello-ok' style='font-size: 0.9em'></span>
+                                                                Applied
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class='js-qualifications-dropdown u-hidden qualifications-dropdown'></div>
+                                                    <div class='buttons js-apply applicant-flow-dropdown'>
+                                                        <a class="c-button c-button--blue  js-interested-button" rel="nofollow" href="javascript:void(0);">Apply</a>
+                                                        <div class='dropdown-align--right dropdown-menu job-dropdown-menu js-dropdown u-hidden' data-force-note='' data-selected-listing-id='307930' data-source='showcase_all_jobs' data-startup-id='377860'>
+                                                            <div class='dropdown-nub-wrapper'></div>
+                                                            <div class='dropdown-nub'></div>
+                                                            <div class='dropdown-inner-menu dropdown-width--lg'>
+                                                                <div class='u-textAlignLeft'>
+                                                                    <div class='js-step js-user-note s-form'>
+                                                                        <div class='dropdown-item dropdown-title u-fontSize14 u-fontWeight500'>
+                                                                            Add a message to Jakt
+                                                                        </div>
+<textarea class='autogrow user-note-textarea u-fontSize14 u-colorGray6 u-block' max_length='1000' placeholder='(optional) Write a note to Lauren Griffin  at Jakt. What excites you about Jakt? Why would you be a good fit?'></textarea>
+                                                                        <button class='apply-button c-button c-button--blue s-vgTop0_5 s-vgRight1 u-floatRight js-apply-button'>
+                                                                            Apply
+                                                                        </button>
+                                                                        <div class='cb'></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ApplicationModalContainer dsr5 shared-react frw65 react_view _a _jm" data-render="false" data-apollo="true" data-component-path="talent/components/ApplicationModalContainer" data-props="{&quot;startupId&quot;:377860}" data-_tn="shared/react/react_view"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='cb'></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-more-ids="[1042114,4377472,2104077,7840675,7505674,7424108,7114569]" data-startup-id="377860" class=" djls28 ftm23 _a _jm" data-_tn="job_listing_showcase/team">
+            <div class='team showcase-section u-bgWhite s-vgBorderTop1'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                    <h2>
+                        Jakt Team
+                    </h2>
+                    <div class='team-members'>
+                        <div class="col2 dsol48 shared-object_list flt44 list _a" data-_tn="shared/object_list/list">
+                            <div class='s-grid s-grid--outer'>
+                                <div class="card s-vgBottom2_5 s-grid-colMd12 dsol48 shared-object_list fur47 user _a" data-_tn="shared/object_list/user">
+                                    <div class='photo'>
+                                        <a class="profile-link" data-type="User" data-id="568055" href="https://angel.co/anthony-tumbiolo"><img class="angel_image" alt="Anthony Tumbiolo" src="https://d1qb2nb5cznatu.cloudfront.net/users/568055-medium_jpg?1511043658" /></a>
+                                    </div>
+                                    <div class='details'>
+                                        <div class='object-list-title'>
+                                            <a href="https://angel.co/anthony-tumbiolo">Anthony Tumbiolo</a>
+                                            <span class='comma'>,</span>
+                                        </div>
+                                        <div class='object-list-subtitle'>
+                                            Founder <a href="https://angel.co/jakt" class="at_mention_link" target="_blank" title="Jakt" data-mention="true" data-type="Startup" data-id="377860" data-slug_id="1151535" data-name="jakt"><span class="at_mention_symbol"></span><span class="at_mention_slug">Jakt</span></a>, JAKT • Studied at <a href="https://angel.co/new-york-university" class="at_mention_link" target="_blank"><span class="at_mention_symbol"></span><span class="at_mention_slug">New York University</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card s-vgBottom2_5 s-grid-colMd12 dsol48 shared-object_list fur47 user _a" data-_tn="shared/object_list/user">
+                                    <div class='photo'>
+                                        <a class="profile-link" data-type="User" data-id="565099" href="https://angel.co/cody-musser"><img class="angel_image" alt="Cody Musser" src="https://d1qb2nb5cznatu.cloudfront.net/users/565099-medium_jpg?1405730120" /></a>
+                                    </div>
+                                    <div class='details'>
+                                        <div class='object-list-title'>
+                                            <a href="https://angel.co/cody-musser">Cody Musser</a>
+                                            <span class='comma'>,</span>
+                                        </div>
+                                        <div class='object-list-subtitle'>
+                                            Product <a href="https://angel.co/jakt" class="at_mention_link" target="_blank" title="Jakt" data-mention="true" data-type="Startup" data-id="377860" data-slug_id="1151535" data-name="jakt"><span class="at_mention_symbol"></span><span class="at_mention_slug">Jakt</span></a> | Formerly Design <a href="https://angel.co/stage-esports" class="at_mention_link" target="_blank" title="Stage Esports" data-mention="true" data-type="Startup" data-id="3846637" data-slug_id="10858053" data-name="stage-esports"><span class="at_mention_symbol"></span><span class="at_mention_slug">Stage Esports</span></a> &amp; CPO  Organize.org. Launched <a href="https://angel.co/librify" class="at_mention_link" target="_blank" title="Librify" data-mention="true" data-type="Startup" data-id="326244" data-slug_id="1006721" data-name="librify"><span class="at_mention_symbol"></span><span class="at_mention_slug">Librify</span></a> <a href="https://angel.co/bookish-1" class="at_mention_link" target="_blank" title="Bookish" data-mention="true" data-type="Startup" data-id="87042" data-slug_id="332782" data-name="bookish-1"><span class="at_mention_symbol"></span><span class="at_mention_slug">Bookish</span></a> &amp; <a href="https://angel.co/pikimal" class="at_mention_link" target="_blank" title="Pikimal" data-mention="true" data-type="Startup" data-id="40603" data-slug_id="221109" data-name="pikimal"><span class="at_mention_symbol"></span><span class="at_mention_slug">Pikimal</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card s-vgBottom2_5 s-grid-colMd12 dsol48 shared-object_list fur47 user _a" data-_tn="shared/object_list/user">
+                                    <div class='photo'>
+                                        <a class="profile-link" data-type="User" data-id="3223509" href="https://angel.co/christopher-swantz"><img class="angel_image" alt="Christopher Swantz" src="https://d1qb2nb5cznatu.cloudfront.net/users/3223509-medium_jpg?1508809445" /></a>
+                                    </div>
+                                    <div class='details'>
+                                        <div class='object-list-title'>
+                                            <a href="https://angel.co/christopher-swantz">Christopher Swantz</a>
+                                            <span class='comma'>,</span>
+                                        </div>
+                                        <div class='object-list-subtitle'>
+                                            Experience with Sketch, Omnigraffle, Adobe Creative. Built agency and startup products across ecommerce, fi-tech, and health-tech verticals. Went to Penn State.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card s-vgBottom2_5 s-grid-colMd12 dsol48 shared-object_list fur47 user _a" data-_tn="shared/object_list/user">
+                                    <div class='photo'>
+                                        <a class="profile-link" data-type="User" data-id="4346225" href="https://angel.co/jay-chmilewski"><img class="angel_image" alt="Jay Chmilewski" src="https://angel.co/images/shared/nopic.png" /></a>
+                                    </div>
+                                    <div class='details'>
+                                        <div class='object-list-title'>
+                                            <a href="https://angel.co/jay-chmilewski">Jay Chmilewski</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card s-vgBottom2_5 s-grid-colMd12 dsol48 shared-object_list fur47 user _a" data-_tn="shared/object_list/user">
+                                    <div class='photo'>
+                                        <a class="profile-link" data-type="User" data-id="3718072" href="https://angel.co/connor-swain"><img class="angel_image" alt="Connor Swain" src="https://d1qb2nb5cznatu.cloudfront.net/users/3718072-medium_jpg?1473734809" /></a>
+                                    </div>
+                                    <div class='details'>
+                                        <div class='object-list-title'>
+                                            <a href="https://angel.co/connor-swain">Connor Swain</a>
+                                            <span class='comma'>,</span>
+                                        </div>
+                                        <div class='object-list-subtitle'>
+                                            See full information at connorswain.co.uk
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card s-vgBottom2_5 s-grid-colMd12 dsol48 shared-object_list fur47 user _a" data-_tn="shared/object_list/user">
+                                    <div class='photo'>
+                                        <a class="profile-link" data-type="User" data-id="134945" href="https://angel.co/marcio-marinho"><img class="angel_image" alt="Marcio Marinho" src="https://d1qb2nb5cznatu.cloudfront.net/users/134945-medium_jpg?1405531620" /></a>
+                                    </div>
+                                    <div class='details'>
+                                        <div class='object-list-title'>
+                                            <a href="https://angel.co/marcio-marinho">Marcio Marinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='cb'></div>
+                    <div class='section-toggle js-show-more s-vgTop1'>
+                        <span class='show-text'>See More</span>
+                        <span class='loading-spinner hidden'><img alt="" src="https://angel.co/assets/shared/ajax-loader-567bc48f6f3d13eb4022283f94be4def6b27342a8709db0fcd7c5d3124c72b90.gif" /></span>
+                    </div>
+                    <div class='cb'></div>
+                </div>
+            </div>
+        </div>
+        <div class=" djls28 fss64 _a _jm" data-_tn="job_listing_showcase/showcase_recommendations">
+            <div class='recommendations showcase-section u-bgGray s-vgBorderTop1'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                    <div class='s-grid-colSm24 s-vgBottom1'>
+                        <h3 class='u-textAlignCenter'>
+                            People also viewed
+                        </h3>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/coffee-meets-bagel/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/84150-a51f11c43ea386a3de7ef2a5f342d313-thumb_jpg.jpg?buster=1382465272" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/coffee-meets-bagel/jobs?src=rec">Coffee Meets Bagel</a></div>
+                            <div class='location u-colorGray8'>San Francisco, Seattle</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/instacart/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/131716-ec50ba6b52bf0edc889bc3a6dae17493-thumb_jpg.jpg?buster=1452745201" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/instacart/jobs?src=rec">Instacart</a></div>
+                            <div class='location u-colorGray8'>San Francisco</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/consensys/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/585912-301eec4556a2226fe4023ec0cec0a70e-thumb_jpg.jpg?buster=1441848684" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/consensys/jobs?src=rec">ConsenSys</a></div>
+                            <div class='location u-colorGray8'>Brooklyn</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/forkable/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/251699-1b3c254e4b62dda6da97518fdad262a1-thumb_jpg.jpg?buster=1448319402" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/forkable/jobs?src=rec">Forkable</a></div>
+                            <div class='location u-colorGray8'>San Francisco</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/mapfit/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/4352898-61a9f6b8bb46aaed3401f4416a8e7e03-thumb_jpg.jpg?buster=1509566184" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/mapfit/jobs?src=rec">Mapfit</a></div>
+                            <div class='location u-colorGray8'>New York City</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/angellist/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/6702-766d1ce00c99ce9a5cbc19d0c87a436e-thumb_jpg.jpg?buster=1367604615" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/angellist/jobs?src=rec">AngelList</a></div>
+                            <div class='location u-colorGray8'>San Francisco, New York City</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/aaptiv/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/478602-8297c2bb2de972d128bafe247ff01776-thumb_jpg.jpg?buster=1526390833" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/aaptiv/jobs?src=rec">Aaptiv</a></div>
+                            <div class='location u-colorGray8'>New York City</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/airtable/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/623000-9d210a39051abc7accec1dc686888dcc-thumb_jpg.jpg?buster=1475019890" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/airtable/jobs?src=rec">Airtable</a></div>
+                            <div class='location u-colorGray8'>San Francisco</div>
+                        </div>
+                    </div>
+                    <div class='s-grid-colLg6 s-grid-colMd8 u-hiddenLgOnly'>
+                        <div class='c-insetC s-vgBottom1 job-container u-bgWhite'>
+                            <div class='logo s-vgBottom1 u-textAlignCenter'><a href="https://angel.co/artsy/jobs?src=rec"><img alt="" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/516-6f81e587aba9e57bcfe8a9eace707290-thumb_jpg.jpg?buster=1397676864" /></a></div>
+                            <div class='company u-fontSize16 u-fontWeight200'><a href="https://angel.co/artsy/jobs?src=rec">Artsy</a></div>
+                            <div class='location u-colorGray8'>New York City</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" djls28 ffr55 _a _jm" data-_tn="job_listing_showcase/footer">
+            <div class='footer showcase-section u-bgGray'>
+                <div class='s-grid s-grid--outer u-maxWidthLayout'>
+                    <div class='s-grid-colMd16'>
+                        <div class='info u-fontSize21 s-vgBottom0_5 u-colorGray6'>
+                            Jakt is one of 26,283 startups hiring on AngelList
+                        </div>
+                        <div class='data-div u-hidden' data-startup_hiring='1' data-startup_name='Jakt'></div>
+                    </div>
+                    <div class='s-gridC-colMd8'>
+                        <div class='footer-actions'>
+                            <a class="c-button c-button--blue js-browse-all-jobs" href="/jobs">Browse All Startup Jobs</a>
+                            <a class="c-button c-button--gray js-post-a-job s-vgLeft0_5" href="https://angel.co/recruiting/signup?src=job-showcase">Post a Job</a>
+                        </div>
+                    </div>
+                    <div class='s-grid-colMd24 u-colorGray9'>
+                        <a class="u-uncoloredLink" href="/help/talent">Help</a>
+                        &middot;
+                        <a class="u-uncoloredLink" href="/terms">Terms</a>
+                        &middot;
+                        <a class="u-uncoloredLink" href="/directory/jobs/locations">Jobs by location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='fb-root'></div>
+    <script>
+  _linkedin_partner_id = "510962"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script>
+  (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
+    </script>
+    <noscript>
+        <img alt='' height='1' src='https://dc.ads.linkedin.com/collect/?pid=510962&amp;fmt=gif' style='display:none;' width='1'>
+    </noscript>
+
+    <script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Pixel ID and Standard Event data below
+  twq('init','o0bj7');
+  twq('track','PageView');
+    </script>
+
+
+</body>
+</html>
