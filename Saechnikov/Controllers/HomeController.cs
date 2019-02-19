@@ -17,5 +17,25 @@ namespace Saechnikov.Controllers
         {
             return View();
         }
+
+        public ActionResult Jobs()
+        {
+            return View();
+        }
+
+        public ActionResult Partners()
+        {
+            return View();
+        }
+
+        public ActionResult Process()
+        {
+            return View();
+        }
+
+        public ActionResult Thoughts()
+        {
+            return View();
+        }
     }
 }

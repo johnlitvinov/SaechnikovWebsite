@@ -1,29 +1,15 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
-    Layout = null;
+    ViewBag.Title = "Home";
 }
 
-<!doctype html>
-
-<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
- 
-<head> @Html.Partial("_Head")</head>
-
-<body class="" data-template="base.twig">
+@Html.Partial("_IndexSlider")
+@Html.Partial("_IndexWhoIam")
+@Html.Partial("_IndexPhilosophy")
+@Html.Partial("_IndexApproach")
+@Html.Partial("_IndexMethods")
+@Html.Partial("_IndexWeWork")
+@Html.Partial("_IndexWantToWorkWithUS")
+@Html.Partial("_Footer")
    
-    @*<div id="fullpage">
-    </div>*@
 
-
-    @Html.Partial("_Header")
-    @Html.Partial("_Slider")
-    @Html.Partial("_WhoIam")
-    @Html.Partial("_Philosophy")
-    @Html.Partial("_Approach")
-    @Html.Partial("_Methods")
-    @Html.Partial("_WeWork")
-    @Html.Partial("_WantToWorkWithUS")
-    @Html.Partial("_Footer")
-</body>
-</html>
 
