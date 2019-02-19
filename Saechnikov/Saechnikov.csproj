@@ -201,6 +201,14 @@
     <Content Include="Views\Home\_PartnersSomeAmazingCompanies.cshtml" />
     <Content Include="Views\Home\_PartnersPress.cshtml" />
     <Content Include="Views\Home\_PartnersFooter.cshtml" />
+    <Content Include="Views\Home\_ThoughtsSlider.cshtml" />
+    <Content Include="Views\Home\_ThoughtsFooter.cshtml" />
+    <Content Include="Views\Home\_ThoughtsLoadMore.cshtml" />
+    <Content Include="Views\Home\_ThoughtsInitiatives.cshtml" />
+    <Content Include="Views\Home\_JobsFooter.cshtml" />
+    <Content Include="Views\Home\_JobsPeopleAlsoWied.cshtml" />
+    <Content Include="Views\Home\_JobsMainScreen.cshtml" />
+    <Content Include="Views\Home\_JobsHead.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
